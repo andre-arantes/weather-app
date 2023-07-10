@@ -13,6 +13,8 @@ function App() {
 
     fetchData(city).then((response) => {
       setData(response);
+    }).catch(() => {
+      alert('Cidade não encontrada');
     });
   };
 
